@@ -15,6 +15,7 @@ a {
 body {
   background-color: salmon;
 }
+
 #container {
   width: 70%;
   margin: auto;
@@ -86,11 +87,61 @@ main::after {
   float: left;
 }
 
+.float-l div,
+footer {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.float-l:not(.col-l) div {
+  padding: 20px;
+}
+
 .col-l,
 .col-r {
   width: 25%;
 }
+
+.col-l *{
+  margin-bottom: 10px;
+}
+.col-l div {
+  padding: 5px;
+}
+
 .col-c {
-  width: 50%;
-  margin: 0 3%:
+  width: calc(50% - 6%);
+  margin: 0 3%;
+}
+
+.col-c p,
+.col-r p {
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.col-r div {
+  margin-bottom: 10%;
+}
+
+footer {
+  height: 150px;
+  bottom:0;
+  text-align: center;
+  font-style: italic;
+}
+
+footer h5 {
+  padding: 5px;
+  height: 10%;
+}
+
+footer hr {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.social {
+  width: 100%;
+  height: calc(90% - 12px);
 }
