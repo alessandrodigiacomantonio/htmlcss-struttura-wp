@@ -144,4 +144,12 @@ footer hr {
 .social {
   width: 100%;
   height: calc(90% - 12px);
+  font-size: 40px;
+}
+
+.social i {
+  width: 32%;
+  height: 100%;
+  line-height: 123px;
+  vertical-align: middle;
 }
